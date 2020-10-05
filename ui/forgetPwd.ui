@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>ForgetPwdWidget</class>
+    <widget class="QDialog" name="ForgetPwdWidget">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>找回密码</string>
+        </property>
+        <widget class="QLabel" name="label">
+            <property name="geometry">
+                <rect>
+                    <x>260</x>
+                    <y>150</y>
+                    <width>231</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>请输入邮箱找回密码</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QWidget" name="formLayoutWidget">
+            <property name="geometry">
+                <rect>
+                    <x>230</x>
+                    <y>220</y>
+                    <width>281</width>
+                    <height>102</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <layout class="QFormLayout" name="formLayout">
+                <property name="horizontalSpacing">
+                    <number>20</number>
+                </property>
+                <property name="verticalSpacing">
+                    <number>20</number>
+                </property>
+                <item row="0" column="0">
+                    <widget class="QLabel" name="userPhone">
+                        <property name="font">
+                            <font>
+                                <family>微软雅黑</family>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>邮箱</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="0" column="1">
+                    <widget class="QLineEdit" name="inputUserPhone">
+                        <property name="font">
+                            <font>
+                                <family>微软雅黑</family>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="0">
+                    <widget class="QLabel" name="password">
+                        <property name="font">
+                            <font>
+                                <family>微软雅黑</family>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>验证码</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="1">
+                    <widget class="QLineEdit" name="inputCaptcha">
+                        <property name="font">
+                            <font>
+                                <family>微软雅黑</family>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="echoMode">
+                            <enum>QLineEdit::Normal</enum>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QPushButton" name="getCaptchaBtn">
+            <property name="geometry">
+                <rect>
+                    <x>530</x>
+                    <y>220</y>
+                    <width>111</width>
+                    <height>28</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>获取验证码</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" name="confirmBtn">
+            <property name="geometry">
+                <rect>
+                    <x>330</x>
+                    <y>360</y>
+                    <width>100</width>
+                    <height>35</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>确认</string>
+            </property>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

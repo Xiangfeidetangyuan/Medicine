@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>registerSuccessDialog</class>
+    <widget class="QDialog" name="registerSuccessDialog">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>400</width>
+                <height>250</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>400</width>
+                <height>250</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>400</width>
+                <height>250</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>注册成功！</string>
+        </property>
+        <widget class="QPushButton" name="closeBtn">
+            <property name="geometry">
+                <rect>
+                    <x>150</x>
+                    <y>180</y>
+                    <width>93</width>
+                    <height>28</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>确定</string>
+            </property>
+        </widget>
+        <widget class="QLabel" name="label">
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>70</y>
+                    <width>281</width>
+                    <height>71</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>新用户注册成功</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+    </widget>
+    <resources/>
+    <connections>
+        <connection>
+            <sender>closeBtn</sender>
+            <signal>clicked()</signal>
+            <receiver>registerSuccessDialog</receiver>
+            <slot>close()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>196</x>
+                    <y>193</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>199</x>
+                    <y>149</y>
+                </hint>
+            </hints>
+        </connection>
+    </connections>
+</ui>

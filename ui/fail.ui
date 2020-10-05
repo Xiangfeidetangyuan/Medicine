@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>failDialog</class>
+    <widget class="QDialog" name="failDialog">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>400</width>
+                <height>250</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>400</width>
+                <height>250</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>400</width>
+                <height>250</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>遇到问题</string>
+        </property>
+        <widget class="QLabel" name="ErrorMsg">
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>30</y>
+                    <width>341</width>
+                    <height>101</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string/>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QPushButton" name="closeBtn">
+            <property name="geometry">
+                <rect>
+                    <x>150</x>
+                    <y>160</y>
+                    <width>93</width>
+                    <height>28</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>关闭</string>
+            </property>
+        </widget>
+    </widget>
+    <resources/>
+    <connections>
+        <connection>
+            <sender>closeBtn</sender>
+            <signal>clicked()</signal>
+            <receiver>failDialog</receiver>
+            <slot>close()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>196</x>
+                    <y>173</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>199</x>
+                    <y>124</y>
+                </hint>
+            </hints>
+        </connection>
+    </connections>
+</ui>
